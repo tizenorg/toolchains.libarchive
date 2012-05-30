@@ -7,6 +7,7 @@ Group:      System/Libraries
 License:    BSD
 URL:        http://code.google.com/p/libarchive/
 Source0:    http://libarchive.googlecode.com/files/libarchive-%{version}.tar.gz
+Source1001: packaging/libarchive.manifest 
 BuildRequires:  pkgconfig(liblzma)
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(openssl)
@@ -44,6 +45,7 @@ developing applications that use %{name}.
 
 
 %build
+cp %{SOURCE1001} .
 libtoolize --force  || :
 autoreconf  || :
 
@@ -75,12 +77,14 @@ find $RPM_BUILD_ROOT -name tar.5 -exec rm -f {} ';'
 
 
 %files
+%manifest libarchive.manifest
 %defattr(-,root,root,-)
 %doc COPYING README NEWS
 %{_libdir}/*.so.*
 
 
 %files devel
+%manifest libarchive.manifest
 %defattr(-,root,root,-)
 %doc
 %{_includedir}/*
