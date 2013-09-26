@@ -65,9 +65,9 @@ find $RPM_BUILD_ROOT -name cpio.5 -exec rm -f {} ';'
 find $RPM_BUILD_ROOT -name mtree.5 -exec rm -f {} ';'
 find $RPM_BUILD_ROOT -name tar.5 -exec rm -f {} ';'
 
-
-
-
+# Tizen SDK license
+mkdir -p %{buildroot}/usr/share/license
+cp COPYING %{buildroot}/usr/share/license/%{name}
 
 
 %post -p /sbin/ldconfig
@@ -81,6 +81,7 @@ find $RPM_BUILD_ROOT -name tar.5 -exec rm -f {} ';'
 %defattr(-,root,root,-)
 %doc COPYING README NEWS
 %{_libdir}/*.so.*
+/usr/share/license/%{name}
 
 
 %files devel
