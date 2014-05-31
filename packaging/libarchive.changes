@@ -1,0 +1,20 @@
+* Wed Mar 24 2010 Yu <yu.a.wang@intel.com> - 2.8.3  
+- Update to 2.8.3 
+
+* Sat Feb 27 2010 Anas Nashif <anas.nashif@intel.com> - 2.7.902a
+- Fixed Group
+
+* Tue Feb 16 2010 Anas Nashif <anas.nashif@intel.com> - 2.7.902a
+- Updated yaml and sanitized spec
+
+* Wed Jan 27 2010 Peter J Zhu <peter.j.zhu@intel.com> - 2.7.902a
+- Update to 2.7.902a
+
+* Mon Jan 12 2009 Anas Nashif <anas.nashif@intel.com> 2.6.0
+- Update to 2.6.0
+
+* Thu Dec 18 2008 Arjan van de Ven <arjan@linux.intel.com> 2.5.5
+- Use standardized spec format
+
+* Sat Sep 20 2008 Anas Nashif <anas.nashif@intel.com> 2.5.5
+- initial import into moblin
