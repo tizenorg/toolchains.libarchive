@@ -1,3 +1,4 @@
+
 Name:       libarchive
 Summary:    A library for handling streaming archive formats
 Version:    2.8.3
@@ -20,9 +21,9 @@ BuildRequires:  autoconf
 BuildRequires:  libtool
 
 %description
-Libarchive is a programming library that can create and read several different 
-streaming archive formats, including most popular tar variants, several cpio 
-formats, and both BSD and GNU ar variants. It can also write shar archives and 
+Libarchive is a programming library that can create and read several different
+streaming archive formats, including most popular tar variants, several cpio
+formats, and both BSD and GNU ar variants. It can also write shar archives and
 read ISO9660 CDROM images and ZIP archives.
 
 
